@@ -5,7 +5,7 @@ import 'package:cibnconference/pages/location.dart';
 import 'package:cibnconference/pages/speakers.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-// import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(MyApp());
@@ -33,6 +33,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  String get url => null;
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -183,11 +185,16 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: [
                     IconButton(
                       icon: Icon(FontAwesomeIcons.facebookF),
-                      onPressed: () {},
+                      onPressed: () async {
+                        await _launchURL(
+                            'https://www.facebook.com/cibnigeria/');
+                      },
                     ),
                     IconButton(
                       icon: Icon(FontAwesomeIcons.twitter),
-                      onPressed: () {},
+                      onPressed: () async {
+                        await _launchURL('https://twitter.com/cibnigeria');
+                      },
                     ),
                     IconButton(
                       icon: Icon(FontAwesomeIcons.linkedinIn),
@@ -195,12 +202,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     IconButton(
                       icon: Icon(FontAwesomeIcons.youtube),
-                      onPressed: () {},
+                      onPressed: () async {
+                        var emailUrl =
+                            '''mailto:Cibn@cibng.org?subject=Send Your Reviews About The Conference&body={Name: CIBN NIGERIA},Email: Cibn@cibng.org}''';
+                        var out = Uri.encodeFull(emailUrl);
+                        await _launchURL(out);
+                      },
                     ),
                     IconButton(
                       icon: Icon(FontAwesomeIcons.envelope),
                       onPressed: () {},
-                      // _launchURL(),
                     ),
                   ],
                 ),
@@ -216,14 +227,13 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  // _launchURL() async {
-  //   const url = 'https://flutterdevs.com/';
-  //   if (await canLaunch(url)) {
-  //     await launch(url);
-  //   } else {
-  //     throw 'Could not launch $url';
-  //   }
-  // }
+  _launchURL(String s) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }
 
 class ActionCard extends StatelessWidget {
