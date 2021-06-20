@@ -11,7 +11,9 @@ class _GalleryState extends State<Gallery> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        title: Text('Conference Gallery'),
+        title: Text('Past Conference Gallery'),
+        centerTitle: true,
+        automaticallyImplyLeading: false,
       ),
       body: SingleChildScrollView(
         child: Column(

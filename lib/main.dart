@@ -115,9 +115,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       title: "About",
                       onPressed: () {
                         Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => AboutConference()));
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => AboutConference(),
+                          ),
+                        );
                       },
                     ),
                     ActionCard(
@@ -188,15 +190,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: [
                     IconButton(
                       icon: Icon(FontAwesomeIcons.facebookF),
-                      onPressed: () async {
-                        await _launchURL(
-                            'https://www.facebook.com/cibnigeria/');
+                      onPressed: () {
+                        _launchURL('https://www.facebook.com/cibnigeria/');
                       },
                     ),
                     IconButton(
                       icon: Icon(FontAwesomeIcons.twitter),
-                      onPressed: () async {
-                        await _launchURL('https://twitter.com/cibnigeria');
+                      onPressed: () {
+                        _launchURL('https://twitter.com/cibnigeria');
                       },
                     ),
                     IconButton(
@@ -205,11 +206,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     IconButton(
                       icon: Icon(FontAwesomeIcons.youtube),
-                      onPressed: () async {
+                      onPressed: () {
                         var emailUrl =
                             '''mailto:Cibn@cibng.org?subject=Send Your Reviews About The Conference&body={Name: CIBN NIGERIA},Email: Cibn@cibng.org}''';
                         var out = Uri.encodeFull(emailUrl);
-                        await _launchURL(out);
+                        _launchURL(out);
                       },
                     ),
                     IconButton(
