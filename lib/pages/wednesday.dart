@@ -655,106 +655,106 @@ class _WednesdayState extends State<Wednesday> {
   //   );
   // }
 
-  _buildPointAssets() {
-    return Container(
-      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-      margin: EdgeInsets.only(bottom: 20.0),
-      decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(12),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.withOpacity(0.2),
-              spreadRadius: 1.0,
-              blurRadius: 6.0,
-            ),
-          ]),
-      child: Row(
-        children: <Widget>[
-          Row(
-            children: <Widget>[
-              SizedBox(width: 10.0),
-              Column(
-                children: <Widget>[
-                  RichText(
-                    text: TextSpan(
-                      children: <TextSpan>[
-                        TextSpan(
-                          text: 'SYNTHESIS OF LEARNING POINTS\n\n',
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        TextSpan(
-                          text: 'Keynote Speakers\n',
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 15,
-                            fontWeight: FontWeight.normal,
-                            fontStyle: FontStyle.italic,
-                          ),
-                        ),
-                        TextSpan(
-                          text: 'Moderators (3)',
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 15,
-                            fontWeight: FontWeight.normal,
-                            fontStyle: FontStyle.italic,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-        ],
-      ),
-    );
-  }
+  // _buildPointAssets() {
+  //   return Container(
+  //     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+  //     margin: EdgeInsets.only(bottom: 20.0),
+  //     decoration: BoxDecoration(
+  //         color: Colors.white,
+  //         borderRadius: BorderRadius.circular(12),
+  //         boxShadow: [
+  //           BoxShadow(
+  //             color: Colors.grey.withOpacity(0.2),
+  //             spreadRadius: 1.0,
+  //             blurRadius: 6.0,
+  //           ),
+  //         ]),
+  //     child: Row(
+  //       children: <Widget>[
+  //         Row(
+  //           children: <Widget>[
+  //             SizedBox(width: 10.0),
+  //             Column(
+  //               children: <Widget>[
+  //                 RichText(
+  //                   text: TextSpan(
+  //                     children: <TextSpan>[
+  //                       TextSpan(
+  //                         text: 'SYNTHESIS OF LEARNING POINTS\n\n',
+  //                         style: TextStyle(
+  //                           color: Colors.black,
+  //                           fontSize: 15,
+  //                           fontWeight: FontWeight.bold,
+  //                         ),
+  //                       ),
+  //                       TextSpan(
+  //                         text: 'Keynote Speakers\n',
+  //                         style: TextStyle(
+  //                           color: Colors.black,
+  //                           fontSize: 15,
+  //                           fontWeight: FontWeight.normal,
+  //                           fontStyle: FontStyle.italic,
+  //                         ),
+  //                       ),
+  //                       TextSpan(
+  //                         text: 'Moderators (3)',
+  //                         style: TextStyle(
+  //                           color: Colors.black,
+  //                           fontSize: 15,
+  //                           fontWeight: FontWeight.normal,
+  //                           fontStyle: FontStyle.italic,
+  //                         ),
+  //                       ),
+  //                     ],
+  //                   ),
+  //                 ),
+  //               ],
+  //             )
+  //           ],
+  //         ),
+  //       ],
+  //     ),
+  //   );
+  // }
 
-  _buildSeventhAssets() {
-    return Container(
-      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-      margin: EdgeInsets.only(bottom: 20.0),
-      decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(12),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.withOpacity(0.2),
-              spreadRadius: 1.0,
-              blurRadius: 6.0,
-            ),
-          ]),
-      child: Row(
-        children: <Widget>[
-          Row(
-            children: <Widget>[
-              SizedBox(width: 10.0),
-              Column(
-                children: <Widget>[
-                  RichText(
-                      text: TextSpan(children: <TextSpan>[
-                    TextSpan(
-                        text:
-                            'CONFERENCE ROUND UP\n\nCOMMUNIQUE\n\nCLOSING REMARKS - DR. HERBERT WIGWE\n\nEXCHANGE OF BATON\n\nVOTE OF THANKS',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                        )),
-                  ])),
-                ],
-              )
-            ],
-          ),
-        ],
-      ),
-    );
-  }
+//   _buildSeventhAssets() {
+//     return Container(
+//       padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+//       margin: EdgeInsets.only(bottom: 20.0),
+//       decoration: BoxDecoration(
+//           color: Colors.white,
+//           borderRadius: BorderRadius.circular(12),
+//           boxShadow: [
+//             BoxShadow(
+//               color: Colors.grey.withOpacity(0.2),
+//               spreadRadius: 1.0,
+//               blurRadius: 6.0,
+//             ),
+//           ]),
+//       child: Row(
+//         children: <Widget>[
+//           Row(
+//             children: <Widget>[
+//               SizedBox(width: 10.0),
+//               Column(
+//                 children: <Widget>[
+//                   RichText(
+//                       text: TextSpan(children: <TextSpan>[
+//                     TextSpan(
+//                         text:
+//                             'CONFERENCE ROUND UP\n\nCOMMUNIQUE\n\nCLOSING REMARKS - DR. HERBERT WIGWE\n\nEXCHANGE OF BATON\n\nVOTE OF THANKS',
+//                         style: TextStyle(
+//                           color: Colors.black,
+//                           fontSize: 15,
+//                           fontWeight: FontWeight.bold,
+//                         )),
+//                   ])),
+//                 ],
+//               )
+//             ],
+//           ),
+//         ],
+//       ),
+//     );
+//   }
 }

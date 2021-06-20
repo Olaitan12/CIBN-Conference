@@ -5,6 +5,7 @@ import 'package:cibnconference/pages/location.dart';
 import 'package:cibnconference/pages/speakers.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void main() {
@@ -48,11 +49,13 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           actions: [
             IconButton(
-                icon: Icon(
-                  Icons.share,
-                  color: Colors.black,
-                ),
-                onPressed: () {})
+              icon: Icon(
+                Icons.share,
+                color: Colors.black,
+              ),
+              onPressed: () => Share.share(
+                  "Download the new CIBN CONFERENCE App and share with your bankers friends.\nPlayStore -  https://bit.ly/3zFRYT3"),
+            ),
           ],
         ),
         body: SingleChildScrollView(
@@ -274,7 +277,7 @@ class ActionCard extends StatelessWidget {
             ),
             Text(
               title,
-              style: Theme.of(context).textTheme.title.copyWith(
+              style: Theme.of(context).textTheme.headline6.copyWith(
                     fontSize: 12,
                   ),
             ),
