@@ -32,6 +32,8 @@ dependencies:
   font_awesome_flutter:
   url_launcher:
   share:
+  youtube_player_flutter:
+  http:
 
 dev_dependencies:
   # flutter_launcher_icons:

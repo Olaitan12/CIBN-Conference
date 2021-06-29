@@ -1,8 +1,10 @@
+import 'package:cibnconference/utils/actioncard.dart';
 import 'package:cibnconference/pages/about.dart';
 import 'package:cibnconference/pages/agenda.dart';
 import 'package:cibnconference/pages/gallery.dart';
 import 'package:cibnconference/pages/location.dart';
 import 'package:cibnconference/pages/speakers.dart';
+import 'package:cibnconference/pages/stream.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:share/share.dart';
@@ -178,7 +180,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       icon: Icons.live_tv,
                       color: Colors.red,
                       title: "Stream",
-                      onPressed: () => {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => VideoScreen(),
+                          ),
+                        );
+                      },
                     ),
                   ],
                 ),
@@ -190,32 +199,47 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: [
                     IconButton(
                       icon: Icon(FontAwesomeIcons.facebookF),
-                      onPressed: () {
-                        _launchURL('https://www.facebook.com/cibnigeria/');
+                      onPressed: () async {
+                        const url = 'https://www.facebook.com/cibnigeria/';
+                        if (await canLaunch(url)) {
+                          await launch(url);
+                        } else {
+                          throw 'Could not launch $url';
+                        }
                       },
                     ),
                     IconButton(
                       icon: Icon(FontAwesomeIcons.twitter),
-                      onPressed: () {
-                        _launchURL('https://twitter.com/cibnigeria');
+                      onPressed: () async {
+                        const url = 'https://www.twitter.com/cibnigeria/';
+                        if (await canLaunch(url)) {
+                          await launch(url);
+                        } else {
+                          throw 'Could not launch $url';
+                        }
                       },
                     ),
                     IconButton(
                       icon: Icon(FontAwesomeIcons.linkedinIn),
-                      onPressed: () {},
-                    ),
-                    IconButton(
-                      icon: Icon(FontAwesomeIcons.youtube),
-                      onPressed: () {
-                        var emailUrl =
-                            '''mailto:Cibn@cibng.org?subject=Send Your Reviews About The Conference&body={Name: CIBN NIGERIA},Email: Cibn@cibng.org}''';
-                        var out = Uri.encodeFull(emailUrl);
-                        _launchURL(out);
+                      onPressed: () async {
+                        const url = 'https://www.linkedin.com/in/cibnigeria/';
+                        if (await canLaunch(url)) {
+                          await launch(url);
+                        } else {
+                          throw 'Could not launch $url';
+                        }
                       },
                     ),
                     IconButton(
-                      icon: Icon(FontAwesomeIcons.envelope),
-                      onPressed: () {},
+                      icon: Icon(FontAwesomeIcons.youtube),
+                      onPressed: () async {
+                        const url = 'https://www.youtube.com/user/TheCibn';
+                        if (await canLaunch(url)) {
+                          await launch(url);
+                        } else {
+                          throw 'Could not launch $url';
+                        }
+                      },
                     ),
                   ],
                 ),
@@ -226,63 +250,6 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
           ),
-        ),
-      ),
-    );
-  }
-
-  _launchURL(String s) async {
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
-}
-
-class ActionCard extends StatelessWidget {
-  final Function onPressed;
-  final IconData icon;
-  final String title;
-  final Color color;
-
-  const ActionCard({Key key, this.onPressed, this.icon, this.title, this.color})
-      : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      borderRadius: BorderRadius.circular(8),
-      onTap: onPressed,
-      child: Ink(
-        height: MediaQuery.of(context).size.height * 0.1,
-        width: MediaQuery.of(context).size.width * 0.2,
-        decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(8),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.grey[200],
-                blurRadius: 10,
-                spreadRadius: 5,
-              )
-            ]),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Icon(
-              icon,
-              color: color,
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Text(
-              title,
-              style: Theme.of(context).textTheme.headline6.copyWith(
-                    fontSize: 12,
-                  ),
-            ),
-          ],
         ),
       ),
     );
