@@ -4,7 +4,7 @@ import 'package:cibnconference/pages/agenda.dart';
 import 'package:cibnconference/pages/gallery.dart';
 import 'package:cibnconference/pages/location.dart';
 import 'package:cibnconference/pages/speakers.dart';
-import 'package:cibnconference/pages/stream.dart';
+// import 'package:cibnconference/pages/stream.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:share/share.dart';
@@ -181,12 +181,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       color: Colors.red,
                       title: "Stream",
                       onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => VideoScreen(),
-                          ),
-                        );
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //     builder: (context) => VideoScreen(),
+                        //   ),
+                        // );
                       },
                     ),
                   ],
