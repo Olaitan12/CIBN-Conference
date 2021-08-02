@@ -44,6 +44,12 @@ class _SpeakersState extends State<Speakers> {
                   _buildAdeStack(),
                   _buildThirtySixStack(),
                   _buildWigweStack(),
+                  _buildOpekeStack(),
+                  _buildBawaStack(),
+                  _buildCokerStack(),
+                  _buildAgboolaStack(),
+                  _buildRasakStack(),
+                  _buildOyizaStack(),
                 ],
               ),
             )),
@@ -212,7 +218,7 @@ class _SpeakersState extends State<Speakers> {
                 CircleAvatar(
                   backgroundColor: Colors.grey,
                   backgroundImage: NetworkImage(
-                      'https://res.cloudinary.com/djveurzal/image/upload/v1615544266/CIBN/Fcib_gpi5yn.jpg'),
+                      'https://res.cloudinary.com/djveurzal/image/upload/v1627899124/paulkagame_nipurx.jpg'),
                   radius: 30,
                 ),
                 SizedBox(width: 10.0),
@@ -220,8 +226,7 @@ class _SpeakersState extends State<Speakers> {
                   children: <Widget>[
                     RichText(
                         text: TextSpan(
-                      text:
-                          'President/Chairman of Council, CIBN\nWELCOME ADDRESS\n',
+                      text: 'President,\nRepublic of Rwanda & Conference\n',
                       style: TextStyle(
                         color: Colors.red,
                         fontSize: 12,
@@ -230,7 +235,7 @@ class _SpeakersState extends State<Speakers> {
                       ),
                       children: <TextSpan>[
                         TextSpan(
-                          text: 'Mr. Bayo Olugbemi, FCIB ',
+                          text: 'President Paul Kagame',
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 16,
@@ -402,7 +407,7 @@ class _SpeakersState extends State<Speakers> {
                 CircleAvatar(
                   backgroundColor: Colors.grey,
                   backgroundImage: NetworkImage(
-                      'https://res.cloudinary.com/djveurzal/image/upload/v1615544254/CIBN/Ahmad_qkenig.jpg'),
+                      'https://res.cloudinary.com/djveurzal/image/upload/v1627899124/Wamkele_gjiufe.jpg'),
                   radius: 30,
                 ),
                 SizedBox(width: 10.0),
@@ -410,8 +415,7 @@ class _SpeakersState extends State<Speakers> {
                   children: <Widget>[
                     RichText(
                         text: TextSpan(
-                      text:
-                          'DAY ONE SESSION 1 CHAIR\nDeputy Governor, Financial Systems Stability\nDirectorate and Chairperson,\nNational Financial Technical Committee,\nCentral Bank of Nigeria\n',
+                      text: 'Secretary General,\nAFCFTA\n',
                       style: TextStyle(
                         color: Colors.red,
                         fontSize: 12,
@@ -420,7 +424,7 @@ class _SpeakersState extends State<Speakers> {
                       ),
                       children: <TextSpan>[
                         TextSpan(
-                          text: 'Mrs. Aisha Ahmad, FCIB',
+                          text: 'H.E Wamkele Mene',
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 16,
@@ -465,7 +469,7 @@ class _SpeakersState extends State<Speakers> {
                 CircleAvatar(
                   backgroundColor: Colors.grey,
                   backgroundImage: NetworkImage(
-                      'https://res.cloudinary.com/djveurzal/image/upload/v1615544282/CIBN/Oduwole_twfn4x.jpg'),
+                      'https://res.cloudinary.com/djveurzal/image/upload/v1627899124/abike_peljmv.jpg'),
                   radius: 30,
                 ),
                 SizedBox(width: 10.0),
@@ -473,8 +477,7 @@ class _SpeakersState extends State<Speakers> {
                   children: <Widget>[
                     RichText(
                       text: TextSpan(
-                        text:
-                            'DAY ONE SESSION 1 PANELIST\nSpecial Adviser to the President on\nEase of Doing Business\n',
+                        text: 'Chairman/CEO\nNigerian Diaspora Commission\n',
                         style: TextStyle(
                           color: Colors.red,
                           fontSize: 12,
@@ -483,7 +486,7 @@ class _SpeakersState extends State<Speakers> {
                         ),
                         children: <TextSpan>[
                           TextSpan(
-                            text: 'Dr. Jumoke Oduwole',
+                            text: 'Mrs. Abike Dabiri Erewa',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 16,
@@ -529,7 +532,7 @@ class _SpeakersState extends State<Speakers> {
                 CircleAvatar(
                   backgroundColor: Colors.grey,
                   backgroundImage: NetworkImage(
-                      'https://res.cloudinary.com/djveurzal/image/upload/v1615544264/CIBN/dozie_fib3pq.jpg'),
+                      'https://res.cloudinary.com/djveurzal/image/upload/v1627899124/Awosika_br1x6r.jpg'),
                   radius: 30,
                 ),
                 SizedBox(width: 10.0),
@@ -538,7 +541,7 @@ class _SpeakersState extends State<Speakers> {
                     RichText(
                       text: TextSpan(
                         text:
-                            'DAY ONE SESSION 2 PANELIST\nChief Executive Officer, Carbon\n',
+                            'Chairman/Independent Non-Executive Director\nAccess Bank Plc\n',
                         style: TextStyle(
                           color: Colors.red,
                           fontSize: 12,
@@ -547,7 +550,7 @@ class _SpeakersState extends State<Speakers> {
                         ),
                         children: <TextSpan>[
                           TextSpan(
-                            text: 'Mr. Chijioke Dozie',
+                            text: 'Dr. (Mrs.) Ajoritsedere Awosika, MFR',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 16,
@@ -593,7 +596,7 @@ class _SpeakersState extends State<Speakers> {
                 CircleAvatar(
                   backgroundColor: Colors.grey,
                   backgroundImage: NetworkImage(
-                      'https://res.cloudinary.com/djveurzal/image/upload/v1615544277/CIBN/patrick_rwbu2f.jpg'),
+                      'https://res.cloudinary.com/djveurzal/image/upload/v1627899124/doyin_i7x4ab.jpg'),
                   radius: 30,
                 ),
                 SizedBox(width: 10.0),
@@ -601,8 +604,7 @@ class _SpeakersState extends State<Speakers> {
                   children: <Widget>[
                     RichText(
                       text: TextSpan(
-                        text:
-                            'DAY TWO SESSION 3 SESSION CHAIR\nMD/CEO Ecobank Nigeria\n',
+                        text: 'Chairman,\nEconomic Advisory Council\n',
                         style: TextStyle(
                           color: Colors.red,
                           fontSize: 12,
@@ -611,7 +613,7 @@ class _SpeakersState extends State<Speakers> {
                         ),
                         children: <TextSpan>[
                           TextSpan(
-                            text: 'Mr. Patrick Akinwuntan, FCIB',
+                            text: 'Dr. Doyin Salami',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 16,
@@ -657,7 +659,7 @@ class _SpeakersState extends State<Speakers> {
                 CircleAvatar(
                   backgroundColor: Colors.grey,
                   backgroundImage: NetworkImage(
-                      'https://res.cloudinary.com/djveurzal/image/upload/v1615544277/CIBN/Oyewale_fb8yel.jpg'),
+                      'https://res.cloudinary.com/djveurzal/image/upload/v1627899124/oramah_pso662.jpg'),
                   radius: 30,
                 ),
                 SizedBox(width: 10.0),
@@ -665,8 +667,7 @@ class _SpeakersState extends State<Speakers> {
                   children: <Widget>[
                     RichText(
                       text: TextSpan(
-                        text:
-                            'DAY TWO SESSION 4 PANELIST\nCEO, StanbicIBTC Nominee\n',
+                        text: 'President,\nAfrexim\n',
                         style: TextStyle(
                           color: Colors.red,
                           fontSize: 12,
@@ -675,7 +676,7 @@ class _SpeakersState extends State<Speakers> {
                         ),
                         children: <TextSpan>[
                           TextSpan(
-                            text: 'Mr. Akeem Oyewale, FCIB',
+                            text: 'Prof. Benedict Oramah, FCIB',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 16,
@@ -721,7 +722,7 @@ class _SpeakersState extends State<Speakers> {
                 CircleAvatar(
                   backgroundColor: Colors.grey,
                   backgroundImage: NetworkImage(
-                      'https://res.cloudinary.com/djveurzal/image/upload/v1615544289/CIBN/wigwe_vygbub.jpg'),
+                      'https://res.cloudinary.com/djveurzal/image/upload/v1627899123/Bismarck_l6lvvl.jpg'),
                   radius: 30,
                 ),
                 SizedBox(width: 10.0),
@@ -730,7 +731,7 @@ class _SpeakersState extends State<Speakers> {
                     RichText(
                       text: TextSpan(
                         text:
-                            'DAY TWO SESSON 5 SPEAKER\nCEO/GMD, Access Bank Plc.\n',
+                            'Managing Director/CEO. Financial Derivatives\nCompany Limited\n',
                         style: TextStyle(
                           color: Colors.red,
                           fontSize: 12,
@@ -739,7 +740,386 @@ class _SpeakersState extends State<Speakers> {
                         ),
                         children: <TextSpan>[
                           TextSpan(
-                            text: 'Mr. Herbert Wigwe, FCIB',
+                            text: 'Mr. Bismarck Rewane,',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  _buildOpekeStack() {
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(12),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.2),
+                spreadRadius: 1.0,
+                blurRadius: 6.0,
+              ),
+            ]),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                CircleAvatar(
+                  backgroundColor: Colors.grey,
+                  backgroundImage: NetworkImage(
+                      'https://res.cloudinary.com/djveurzal/image/upload/v1627899123/funke_v0feo2.jpg'),
+                  radius: 30,
+                ),
+                SizedBox(width: 10.0),
+                Column(
+                  children: <Widget>[
+                    RichText(
+                      text: TextSpan(
+                        text: 'Founder/CEO\nMain One Cable Company\n',
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w400,
+                          height: 1.3,
+                        ),
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: 'Ms. Funke Opeke',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  _buildBawaStack() {
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(12),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.2),
+                spreadRadius: 1.0,
+                blurRadius: 6.0,
+              ),
+            ]),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                CircleAvatar(
+                  backgroundColor: Colors.grey,
+                  backgroundImage: NetworkImage(
+                      'https://res.cloudinary.com/djveurzal/image/upload/v1627899123/bawa_k3wlhf.jpg'),
+                  radius: 30,
+                ),
+                SizedBox(width: 10.0),
+                Column(
+                  children: <Widget>[
+                    RichText(
+                      text: TextSpan(
+                        text:
+                            'Executive Chairman, Economic Financial\nCrimes Commission\n',
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w400,
+                          height: 1.3,
+                        ),
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: 'Mr. Abdulrasheed Bawa',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  _buildCokerStack() {
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(12),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.2),
+                spreadRadius: 1.0,
+                blurRadius: 6.0,
+              ),
+            ]),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                CircleAvatar(
+                  backgroundColor: Colors.grey,
+                  backgroundImage: NetworkImage(
+                      'https://res.cloudinary.com/djveurzal/image/upload/v1627899123/ayotunde_ov1bzb.jpg'),
+                  radius: 30,
+                ),
+                SizedBox(width: 10.0),
+                Column(
+                  children: <Widget>[
+                    RichText(
+                      text: TextSpan(
+                        text: 'Chief Executive Officer\nRack Center\n',
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w400,
+                          height: 1.3,
+                        ),
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: 'Mr. Ayotunde Coker,',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  _buildAgboolaStack() {
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(12),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.2),
+                spreadRadius: 1.0,
+                blurRadius: 6.0,
+              ),
+            ]),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                CircleAvatar(
+                  backgroundColor: Colors.grey,
+                  backgroundImage: NetworkImage(
+                      'https://res.cloudinary.com/djveurzal/image/upload/v1615544254/CIBN/agboola_iuflll.jpg'),
+                  radius: 30,
+                ),
+                SizedBox(width: 10.0),
+                Column(
+                  children: <Widget>[
+                    RichText(
+                      text: TextSpan(
+                        text: 'Co-Founder\nFlutterwave\n',
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w400,
+                          height: 1.3,
+                        ),
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: 'Mr. Olugbenga Agboola,',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  _buildRasakStack() {
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(12),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.2),
+                spreadRadius: 1.0,
+                blurRadius: 6.0,
+              ),
+            ]),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                CircleAvatar(
+                  backgroundColor: Colors.grey,
+                  backgroundImage: NetworkImage(
+                      'https://res.cloudinary.com/djveurzal/image/upload/v1627899123/razaq_lmevy2.jpg'),
+                  radius: 30,
+                ),
+                SizedBox(width: 10.0),
+                Column(
+                  children: <Widget>[
+                    RichText(
+                      text: TextSpan(
+                        text: 'CEO/Co-founder\nCowrywise\n',
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w400,
+                          height: 1.3,
+                        ),
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: 'Mr. Razaq Ahmed,',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  _buildOyizaStack() {
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(12),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.2),
+                spreadRadius: 1.0,
+                blurRadius: 6.0,
+              ),
+            ]),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                CircleAvatar(
+                  backgroundColor: Colors.grey,
+                  backgroundImage: NetworkImage(
+                      'https://res.cloudinary.com/djveurzal/image/upload/v1615544285/CIBN/salu_rssixi.jpg'),
+                  radius: 30,
+                ),
+                SizedBox(width: 10.0),
+                Column(
+                  children: <Widget>[
+                    RichText(
+                      text: TextSpan(
+                        text: 'Group Head, Human Resources\nGTBank Plc\n',
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w400,
+                          height: 1.3,
+                        ),
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: 'Mrs. Oyiza Salu,',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 16,
