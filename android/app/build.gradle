@@ -43,7 +43,7 @@ android {
         applicationId "com.cibnconference"
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode 7
+        versionCode 8
         versionName "1.0"
     }
 
